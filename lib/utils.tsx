@@ -603,7 +603,6 @@ export const getLivepeerComUsageData = async (
       ...day,
       date: day.date / 1000,
     }));
-    console.log("wat", arr);
     return arr;
   } catch (e) {
     console.log(e);

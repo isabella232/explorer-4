@@ -17,7 +17,6 @@ import { gql, useQuery } from "@apollo/client";
 import { orchestratorsQuery } from "../queries/orchestratorsQuery";
 import { chartDataQuery } from "../queries/chartDataQuery";
 import { ArrowRightIcon } from "@modulz/radix-icons";
-import { IS_TESTNET } from "constants/chains";
 import Spinner from "@components/Spinner";
 
 const Panel = ({ children }) => (
@@ -36,7 +35,7 @@ const Panel = ({ children }) => (
       border: "1px solid $colors$neutral4",
       width: "100%",
       "@bp2": {
-        width: IS_TESTNET ? "49%" : "43%",
+        width: "43%",
       },
     }}
   >
@@ -64,8 +63,8 @@ const Home = () => {
     wrapAround: true,
     cellAlign: "left",
     prevNextButtons: false,
-    draggable: IS_TESTNET ? false : true,
-    pageDots: IS_TESTNET ? false : true,
+    draggable: true,
+    pageDots: true,
   };
 
   return (
@@ -104,9 +103,7 @@ const Home = () => {
           <Box
             css={{
               mb: "$7",
-              boxShadow: !IS_TESTNET
-                ? "inset -20px 0px 20px -20px rgb(0 0 0 / 70%)"
-                : "none",
+              boxShadow: "inset -20px 0px 20px -20px rgb(0 0 0 / 70%)",
               ".dot": {
                 backgroundColor: "$neutral6",
               },
@@ -123,17 +120,15 @@ const Home = () => {
               reloadOnUpdate
               static
             >
-              {!IS_TESTNET && (
-                <Panel>
-                  <GlobalChart
-                    data={chartData}
-                    display="volume"
-                    title="Estimated Usage (7d)"
-                    field="weeklyUsageMinutes"
-                    unit="minutes"
-                  />
-                </Panel>
-              )}
+              <Panel>
+                <GlobalChart
+                  data={chartData}
+                  display="volume"
+                  title="Estimated Usage (7d)"
+                  field="weeklyUsageMinutes"
+                  unit="minutes"
+                />
+              </Panel>
               <Panel>
                 <GlobalChart
                   data={chartData}

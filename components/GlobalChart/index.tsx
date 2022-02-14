@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { ResponsiveContainer } from "recharts";
 import TradingviewChart, { CHART_TYPES } from "../TradingviewChart";
 import { Skeleton, Box } from "@livepeer/design-system";
-import { IS_TESTNET } from "constants/chains";
 
 const GlobalChart = ({ data, display, title, field, unit = "" }) => {
   // update the width on a window resize
@@ -48,15 +47,11 @@ const GlobalChart = ({ data, display, title, field, unit = "" }) => {
             base={
               unit === "minutes"
                 ? data.chartData.oneWeekUsage
-                : IS_TESTNET
-                ? data.chartData.oneWeekVolumeETH
                 : data.chartData.oneWeekVolumeUSD
             }
             baseChange={
               unit === "minutes"
                 ? data.chartData.weeklyUsageChange
-                : IS_TESTNET
-                ? data.chartData.weeklyVolumeChangeETH
                 : data.chartData.weeklyVolumeChangeUSD
             }
             title={title}
