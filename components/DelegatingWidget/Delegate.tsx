@@ -116,7 +116,7 @@ const Delegate = ({
             onClick={onDelegate}
             css={{ width: "100%" }}
           >
-            {+amount >= 0 && switching ? "Move Delegated Stake" : "Delegate"}
+            Delegate
           </Button>
         </Box>
         <ProgressSteps
