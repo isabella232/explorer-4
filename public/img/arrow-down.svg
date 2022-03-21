@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
-    <title>Path</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <polygon id="path-1" points="5.68451955 0.111111111 4.43407634 0.111111111 4.43407634 9.37276965 4.34543433 9.37276965 0.907306452 5.88515989 0.0598888889 6.7456477 5.05929794 11.8184282 10.0598889 6.7456477 9.21128943 5.88515989 5.77434345 9.37276965 5.68451955 9.37276965"></polygon>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <mask id="mask-2" fill="white">
-            <use xlink:href="#path-1"></use>
-        </mask>
-        <use id="Path" fill="currentColor" fill-rule="nonzero" xlink:href="#path-1"></use>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="12" version="1.1" viewBox="0 0 10 12"><title>Path</title><desc>Created with Sketch.</desc><defs><polygon id="path-1" points="5.685 .111 4.434 .111 4.434 9.373 4.345 9.373 .907 5.885 .06 6.746 5.059 11.818 10.06 6.746 9.211 5.885 5.774 9.373 5.685 9.373"/></defs><g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><mask id="mask-2" fill="#fff"><use xlink:href="#path-1"/></mask><use id="Path" fill="currentColor" fill-rule="nonzero" xlink:href="#path-1"/></g></svg>
